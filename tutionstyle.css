@@ -1,0 +1,1144 @@
+
+body{
+     background-color:white;
+    padding:0;
+      margin:0;
+      height:100%;
+      overflow-x:hidden;
+      text-align:center;
+    display: flex;
+    flex-direction: column;
+}
+     main {
+    flex: 1; /* push footer down */
+}
+
+.site-footer {
+    margin-top: auto;
+}
+header{
+       background-color:#DDB1C8;
+       padding:15px;
+       box-shadow:0 0 3px black;
+       }
+    
+header li{
+          display:inline;
+          padding-right:100px;
+          
+          
+         }
+header li a{
+            color:black;
+            text-decoration:none;
+            padding:13px;
+            transition: .3s ease
+            }
+header li a:hover{
+           color:royalblue;
+            
+           
+            }
+header ul a{
+           color:white;
+           background-color:royalblue;
+           border-radius:30px;
+           position:relative;
+          
+           }
+header li img{
+              width:80px;
+              float:left;
+              margin-top:-25px;
+              border-radius:0px;
+              height:70px;
+}
+span{ 
+     color:#DDB1C8;
+}
+/* ===========================================================
+   ================== SLIDER 1 (ORIGINAL) =====================
+   =========================================================== */
+
+.video-wrapper1 {
+    width: 100%;
+    max-width: 980px;
+    margin: 20px auto;
+    position: relative;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.video-container1 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 18px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.video-box1 {
+    flex: 0 0 220px;
+    text-align: center;
+}
+
+.thumb1 {
+    width: 100%;
+    height: 140px;
+    background: #ddb1c8;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.play-btn1 {
+    width: 60px;
+    cursor: pointer;
+}
+
+/* Arrows */
+.left-arrow1, .right-arrow1 {
+    position: absolute;
+    top: 87%;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    z-index: 30;
+    background-color: #e8c5fd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-arrow1 { left: -50px; }
+.right-arrow1 { right: -5px; }
+
+
+/* ===========================================================
+   ================== SLIDER 2 (ORIGINAL) =====================
+   =========================================================== */
+
+.video-wrapper2 {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    position: relative;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.video-container2 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 18px;
+    overflow: hidden;
+}
+
+.video-box2 {
+    flex: 0 0 220px;
+    text-align: center;
+}
+
+.thumb2 {
+    width: 100%;
+    height: 140px;
+    background: #ddb1c8;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.play-btn2 {
+    width: 60px;
+    cursor: pointer;
+}
+
+.left-arrow2, .right-arrow2 {
+    position: absolute;
+    top: 27%;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    z-index: 30;
+    background-color: #e8c5fd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* ===========================================================
+   ================== SLIDER 3 (FIXED) ========================
+   =========================================================== */
+
+.video-wrapper3 {
+    width: 100%;
+    max-width: 980px;
+    margin: 20px auto;
+    position: relative;
+    padding: 10px 0;
+}
+
+.video-container3 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 18px;
+    overflow: hidden;
+}
+
+.video-box3 {
+    flex: 0 0 220px;
+    text-align: center;
+}
+
+.thumb3 {
+    width: 100%;
+    height: 140px;
+    background: #ddb1c8;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.play-btn3 {
+    width: 60px;
+    cursor: pointer;
+}
+
+.left-arrow3, .right-arrow3 {
+    position: absolute;
+    top: 27%;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    z-index: 30;
+    background-color: #e8c5fd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-arrow3 { left: -50px; }
+.right-arrow3 { right: -50px; }
+
+
+/* ===========================================================
+   ================== SLIDER 4 (FIXED) ========================
+   =========================================================== */
+
+.video-wrapper4 {
+    width: 100%;
+    max-width: 980px;
+    margin: 20px auto;
+    position: relative;
+    padding: 10px 0;
+}
+
+.video-container4 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 18px;
+    overflow: hidden;
+}
+
+.video-box4 {
+    flex: 0 0 220px;
+    text-align: center;
+}
+
+.thumb4 {
+    width: 100%;
+    height: 140px;
+    background: #ddb1c8;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.play-btn4 {
+    width: 60px;
+    cursor: pointer;
+}
+.left-arrow, .right-arrow4{
+position: absolute;
+    top: 27%;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    z-index: 30;
+    background-color: #e8c5fd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-arrow4 { left: -50px; }
+.right-arrow4 { right: -50px; }
+/* ---------- Arrow base (applies to .arrow elements) ---------- */
+.arrow {
+  position: absolute;
+    top: 27%;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    z-index: 30;
+    background-color: #e8c5fd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* If you used <img class="arrow left-arrow1"> style (arrow is image element),
+   the parent circle styles won't apply — in that case wrap the <img> in a div with class "arrow".
+   But to support both patterns, add this: if arrow is an img, constrain its size and add background */
+img.left-arrow1, img.left-arrow2, img.left-arrow3, img.left-arrow4, img.left-arrow5, img.left-arrow6, img.left-arrow7, img.left-arrow8, img.left-arrow9,
+img.right-arrow1, img.right-arrow2, img.right-arrow3, img.right-arrow4, img.right-arrow5, img.right-arrow6, img.right-arrow7, img.right-arrow8, img.right-arrow9 {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    background-color: #e8c5fd;
+    border-radius: 50%;
+    padding: 7px; /* makes the icon smaller inside circle */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+/* Thumbs background & sizing (ensure visible) */
+.thumb1, .thumb2, .thumb3, .thumb4 {
+    width: 100%;
+    height: 140px;
+    background: #ddb1c8;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Play button icons inside thumbs */
+.play-btn1, .play-btn2, .play-btn3, .play-btn4 {
+    width: 60px;
+    height: auto;
+    display: block;
+}
+
+
+/* ====== Video row + arrows (wrapper 5) ====== */
+.video-wrapper5 {
+    width: 100%;
+    max-width: 980px;
+    margin: 20px auto;
+    position: relative;
+    padding: 10px 40px; /* Space for arrows */
+    box-sizing: border-box;
+}
+
+.video-container5 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 18px;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.video-box5 {
+    flex: 0 0 220px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.thumb5 {
+    width: 100%;
+    height: 140px;
+    background: #ddb1c8;   /* Background color */
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-btn5 {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    display: block;
+}
+
+/* video title */
+.video-title {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #222;
+}
+
+/* Arrows */
+
+
+.left-arrow5 {
+    left: -15px;
+}
+
+.right-arrow5 {
+    right: -15px;
+}
+
+
+/* ====== Video Slider 6 – Psychology Class 11 ====== */
+
+.video-wrapper6 {
+    width: 100%;
+    max-width: 980px;
+    margin: 20px auto;
+    position: relative;
+    padding: 10px 40px; /* space for arrows */
+    box-sizing: border-box;
+}
+
+.video-container6 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 18px;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.video-box6 {
+    flex: 0 0 220px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.thumb6 {
+    width: 100%;
+    height: 140px;
+    background: #ddb1c8;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-btn6 {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+}
+
+.video-title {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #222;
+}
+
+
+.arrow:hover {
+    transform: scale(1.14);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+.left-arrow6 {
+    left: -15px;
+}
+
+.right-arrow6 {
+    right: -15px;
+}
+
+
+
+/* ===== Video Slider 7 (Urdu Class 12) ===== */
+
+.video-wrapper7 {
+    width: 100%;
+    max-width: 980px;
+    margin: 25px auto;
+    position: relative;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.video-container7 {
+    display: flex;
+    gap: 18px;
+    overflow: hidden;
+    justify-content: flex-start;
+}
+
+.video-box7 {
+    flex: 0 0 220px;
+    text-align: center;
+}
+
+.thumb7 {
+    width: 100%;
+    height: 140px;
+    background: #ddb1c8;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-btn7 {
+    width: 60px;
+    cursor: pointer;
+}
+
+/* arrows */
+
+
+.left-arrow7 {
+    left: -55px;
+}
+
+.right-arrow7 {
+    right: -55px;
+}
+/* ====== Video Slider 8 (Psychology Class 12) ====== */
+
+.video-wrapper8 {
+    width: 100%;
+    max-width: 980px;
+    margin: 20px auto;
+    position: relative;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.video-container8 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 18px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.video-box8 {
+    flex: 0 0 220px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.thumb8 {
+    width: 100%;
+    height: 140px;
+    background: #ddb1c8;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-btn8 {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    display: block;
+}
+
+/* arrows */
+.left-arrow8 {
+    position: absolute;
+    left: -50px;
+    top: 25%;
+    z-index: 30;
+    cursor: pointer;
+}
+
+.right-arrow8 {
+    position: absolute;
+    right: -50px;
+    top: 25%;
+    z-index: 30;
+    cursor: pointer;
+}
+
+
+.video-wrapper9 {
+    width: 100%;
+    max-width: 980px;
+    margin: 20px auto;
+    position: relative;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.video-container9 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 18px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.video-box9 {
+    flex: 0 0 220px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.thumb9 {
+    width: 100%;
+    height: 140px;
+    background: #ddb1c8;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-btn9 {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    display: block;
+}
+
+/* arrows */
+.left-arrow9 {
+    position: absolute;
+   
+    top: 25%;
+    z-index: 30;
+    cursor: pointer;
+}
+
+.right-arrow9 {
+    position: absolute;
+   
+    top: 25%;
+    z-index: 30;
+    cursor: pointer;
+}
+
+
+/* Medium-sized responsive image */
+.responsive-img {
+  max-width: 60%;  /* Medium size on large screens */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.responsive-img:hover {
+  transform: scale(1.05);
+}
+
+/* Fullscreen overlay */
+.fullscreen-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.fullscreen-overlay img {
+  max-width: 105%;
+  max-height: 105%;
+  object-fit: contain;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+}
+
+
+
+.site-footer {
+  background-color: #DDB1C8;
+  color: #000; /* adjust if needed */
+  padding: 0px 0px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+.copyright{
+           text-align:left;
+}
+.footer-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+ 
+}
+
+.footer-left {
+  flex: 1 1 300px;
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-right {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.footer-right a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.footer-right img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-right img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+
+.logo img{
+      height:180px;
+      width:180px;
+      padding-right:500px;
+}
+.video-heading{
+               font-style:italic;
+               font-size:40px;
+}
+
+.tution-heading{
+               font-style:italic;
+               font-size:40px;
+}
+/* ================= Responsive Adjustments ================= */
+
+/* General body adjustments for small screens */
+@media (max-width: 1200px) {
+    header li {
+        padding-right: 50px;
+    }
+
+    header li img {
+        width: 60px;
+        height: 60px;
+        margin-top: -15px;
+    }
+
+    .logo img {
+        height: 120px;
+        width: 120px;
+        padding-right: 0;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .site-footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .footer-right {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+/* =================== COMPLETE RESPONSIVE ADJUSTMENTS =================== */
+
+/* General body fix */
+body {
+    overflow-x:hidden; /* default: hide scroll on large screens */
+}
+
+/* ---------------- Sliders Full Responsiveness ---------------- */
+
+/* Make slider wrapper fully responsive */
+.video-wrapper1,
+.video-wrapper2,
+.video-wrapper3,
+.video-wrapper4,
+.video-wrapper5,
+.video-wrapper6,
+.video-wrapper7,
+.video-wrapper8,
+.video-wrapper9 {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+   /* space for arrows inside */
+    box-sizing: border-box;
+}
+
+/* Slider container */
+.video-container1,
+.video-container2,
+.video-container3,
+.video-container4,
+.video-container5,
+.video-container6,
+.video-container7,
+.video-container8,
+.video-container9 {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto; /* enable horizontal scroll */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* smooth on mobile */
+}
+
+/* Hide default scrollbar for a clean look */
+.video-container1::-webkit-scrollbar,
+.video-container2::-webkit-scrollbar,
+.video-container3::-webkit-scrollbar,
+.video-container4::-webkit-scrollbar,
+.video-container5::-webkit-scrollbar,
+.video-container6::-webkit-scrollbar,
+.video-container7::-webkit-scrollbar,
+.video-container8::-webkit-scrollbar,
+.video-container9::-webkit-scrollbar {
+    display: none;
+}
+
+/* Video boxes shrink dynamically */
+.video-box1,
+.video-box2,
+.video-box3,
+.video-box4,
+.video-box5,
+.video-box6,
+.video-box7,
+.video-box8,
+.video-box9 {
+    flex: 0 0 auto;
+    min-width: 140px; /* smallest size for mobile */
+    max-width: 220px;
+    text-align: center;
+}
+
+/* Thumbnails */
+.thumb1,
+.thumb2,
+.thumb3,
+.thumb4,
+.thumb5,
+.thumb6,
+.thumb7,
+.thumb8,
+.thumb9 {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9; /* maintain ratio */
+    background: #ddb1c8;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Play buttons inside thumbnails */
+.play-btn1,
+.play-btn2,
+.play-btn3,
+.play-btn4,
+.play-btn5,
+.play-btn6,
+.play-btn7,
+.play-btn8,
+.play-btn9 {
+    width: 50px;
+    height: auto;
+}
+
+/* ---------------- Arrow Fix ---------------- */
+
+
+/* =====================================================
+   FINAL ARROW POSITION OVERRIDE — PX ONLY
+   (Overrides ALL previous arrow settings)
+   ===================================================== */
+
+/* ---------- Slider 1 ---------- */
+.video-wrapper1 .left-arrow1  { left: -25px !important; }
+.video-wrapper1 .right-arrow1 { right: -25px !important;  }
+
+/* ---------- Slider 2 ---------- */
+.video-wrapper2 .left-arrow2  { left: 195px !important; }
+.video-wrapper2 .right-arrow2 { right: 195px !important;  }
+
+/* ---------- Slider 3 ---------- */
+.video-wrapper3 .left-arrow3  { left: -25px !important;  }
+.video-wrapper3 .right-arrow3 { right: -25px !important;  }
+
+/* ---------- Slider 4 ---------- */
+.video-wrapper4 .left-arrow4  { left: -25px !important;  }
+.video-wrapper4 .right-arrow4 { right: -25px !important; }
+
+/* ---------- Slider 5 ---------- */
+.video-wrapper5 .left-arrow5  { left: -25px !important;  }
+.video-wrapper5 .right-arrow5 { right: -25px !important;  }
+
+/* ---------- Slider 6 ---------- */
+.video-wrapper6 .left-arrow6  { left: -25px !important;  }
+.video-wrapper6 .right-arrow6 { right: -25px !important;  }
+
+/* ---------- Slider 7 ---------- */
+.video-wrapper7 .left-arrow7  { left: -25px !important;  }
+.video-wrapper7 .right-arrow7 { right: -25px !important;  }
+
+/* ---------- Slider 8 ---------- */
+.video-wrapper8 .left-arrow8  { left: -25px !important;  }
+.video-wrapper8 .right-arrow8 { right: -25px !important;  }
+
+/* ---------- Slider 9 ---------- */
+.video-wrapper9 .left-arrow9  { left: -25px !important;  }
+.video-wrapper9 .right-arrow9 { right: -25px !important;  }
+
+
+/* ---------------- Media Queries ---------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .video-box1, .video-box2, .video-box3, .video-box4,
+    .video-box5, .video-box6, .video-box7, .video-box8, .video-box9 {
+        min-width: 160px;
+    }
+
+    .play-btn1, .play-btn2, .play-btn3, .play-btn4,
+    .play-btn5, .play-btn6, .play-btn7, .play-btn8, .play-btn9 {
+        width: 40px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .video-box1, .video-box2, .video-box3, .video-box4,
+    .video-box5, .video-box6, .video-box7, .video-box8, .video-box9 {
+        min-width: 140px;
+    }
+
+    .play-btn1, .play-btn2, .play-btn3, .play-btn4,
+    .play-btn5, .play-btn6, .play-btn7, .play-btn8, .play-btn9 {
+        width: 35px;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .video-box1, .video-box2, .video-box3, .video-box4,
+    .video-box5, .video-box6, .video-box7, .video-box8, .video-box9 {
+        min-width: 120px;
+    }
+
+    .play-btn1, .play-btn2, .play-btn3, .play-btn4,
+    .play-btn5, .play-btn6, .play-btn7, .play-btn8, .play-btn9 {
+        width: 30px;
+    }
+
+    .arrow {
+        width: 28px;
+        height: 28px;
+    }
+}
+/* =========================
+   FIX VIDEO SLIDERS RESPONSIVE
+   Keep videos centered and arrows on sides
+   ========================= */
+
+/* Make all video wrappers centered */
+.video-wrapper1, .video-wrapper2, .video-wrapper3, .video-wrapper4,
+.video-wrapper5, .video-wrapper6, .video-wrapper7, .video-wrapper8, .video-wrapper9 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative; /* arrows relative to wrapper */
+    max-width: 980px;   /* optional max-width for desktop */
+    padding: 0 40px;    /* space for arrows */
+}
+
+/* Center video containers */
+.video-container1, .video-container2, .video-container3, .video-container4,
+.video-container5, .video-container6, .video-container7, .video-container8, .video-container9 {
+    display: flex;
+    justify-content: center; /* center videos horizontally */
+    gap: 18px;
+    overflow-x: auto; /* allow horizontal scroll if too many videos */
+}
+
+/* Arrows position on sides of the video wrapper */
+.video-wrapper1 .left-arrow1, .video-wrapper2 .left-arrow2,
+.video-wrapper3 .left-arrow3, .video-wrapper4 .left-arrow4,
+.video-wrapper5 .left-arrow5, .video-wrapper6 .left-arrow6,
+.video-wrapper7 .left-arrow7, .video-wrapper8 .left-arrow8,
+.video-wrapper9 .left-arrow9 {
+    left: 0;
+    top: 15%;
+  
+}
+
+.video-wrapper1 .right-arrow1, .video-wrapper2 .right-arrow2,
+.video-wrapper3 .right-arrow3, .video-wrapper4 .right-arrow4,
+.video-wrapper5 .right-arrow5, .video-wrapper6 .right-arrow6,
+.video-wrapper7 .right-arrow7, .video-wrapper8 .right-arrow8,
+.video-wrapper9 .right-arrow9 {
+    right: 0;
+    top: 15%;
+    
+}
+
+/* Make arrows smaller on mobile */
+@media (max-width: 768px) {
+    .video-wrapper1 .left-arrow1, .video-wrapper1 .right-arrow1,
+    .video-wrapper2 .left-arrow2, .video-wrapper2 .right-arrow2,
+    .video-wrapper3 .left-arrow3, .video-wrapper3 .right-arrow3,
+    .video-wrapper4 .left-arrow4, .video-wrapper4 .right-arrow4,
+    .video-wrapper5 .left-arrow5, .video-wrapper5 .right-arrow5,
+    .video-wrapper6 .left-arrow6, .video-wrapper6 .right-arrow6,
+    .video-wrapper7 .left-arrow7, .video-wrapper7 .right-arrow7,
+    .video-wrapper8 .left-arrow8, .video-wrapper8 .right-arrow8,
+    .video-wrapper9 .left-arrow9, .video-wrapper9 .right-arrow9 {
+        width: 35px;
+        height: 35px;
+    }
+
+    .video-container1, .video-container2, .video-container3, .video-container4,
+    .video-container5, .video-container6, .video-container7, .video-container8, .video-container9 {
+        justify-content: flex-start; /* allow scroll horizontally on small screens */
+        padding: 0 10px;
+    }
+}
+
+/* Optional: scroll bar style for mobile horizontal scroll */
+.video-container1::-webkit-scrollbar,
+.video-container2::-webkit-scrollbar,
+.video-container3::-webkit-scrollbar,
+.video-container4::-webkit-scrollbar,
+.video-container5::-webkit-scrollbar,
+.video-container6::-webkit-scrollbar,
+.video-container7::-webkit-scrollbar,
+.video-container8::-webkit-scrollbar,
+.video-container9::-webkit-scrollbar {
+    height: 6px;
+}
+
+.video-container1::-webkit-scrollbar-thumb,
+.video-container2::-webkit-scrollbar-thumb,
+.video-container3::-webkit-scrollbar-thumb,
+.video-container4::-webkit-scrollbar-thumb,
+.video-container5::-webkit-scrollbar-thumb,
+.video-container6::-webkit-scrollbar-thumb,
+.video-container7::-webkit-scrollbar-thumb,
+.video-container8::-webkit-scrollbar-thumb,
+.video-container9::-webkit-scrollbar-thumb {
+    background: #DDB1C8;
+    border-radius: 3px;
+}
+.video-wrapper1 .left-arrow1:hover,
+.video-wrapper1 .right-arrow1:hover,
+.video-wrapper2 .left-arrow2:hover,
+.video-wrapper2 .right-arrow2:hover,
+.video-wrapper3 .left-arrow3:hover,
+.video-wrapper3 .right-arrow3:hover,
+.video-wrapper4 .left-arrow4:hover,
+.video-wrapper4 .right-arrow4:hover,
+.video-wrapper5 .left-arrow5:hover,
+.video-wrapper5 .right-arrow5:hover,
+.video-wrapper6 .left-arrow6:hover,
+.video-wrapper6 .right-arrow6:hover,
+.video-wrapper7 .left-arrow7:hover,
+.video-wrapper7 .right-arrow7:hover,
+.video-wrapper8 .left-arrow8:hover,
+.video-wrapper8 .right-arrow8:hover,
+.video-wrapper9 .left-arrow9:hover,
+.video-wrapper9 .right-arrow9:hover {
+    transition: transform 0.18s ease-in-out; /* smooth but controlled */
+    transform-origin: center center;         /* scale from center */
+     transform: scale(1.08);
+}
+/* =========================
+   MOBILE ARROWS & HORIZONTAL SCROLL FIX
+   ========================= */
+
+/* Apply only on mobile screens */
+@media (max-width: 768px) {
+  /* Make video wrappers wider to include arrows */
+  .video-wrapper1, .video-wrapper2, .video-wrapper3, .video-wrapper4,
+  .video-wrapper5, .video-wrapper6, .video-wrapper7, .video-wrapper8, .video-wrapper9 {
+      overflow-x: scroll !important; /* show horizontal scroll */
+      padding-left: 50px;  /* extra space for left arrows */
+      padding-right: 50px; /* extra space for right arrows */
+      box-sizing: content-box; /* so padding doesn't shrink content */
+  }
+
+  /* Ensure left arrows are fully visible */
+  .left-arrow1, .left-arrow2, .left-arrow3, .left-arrow4,
+  .left-arrow5, .left-arrow6, .left-arrow7, .left-arrow8, .left-arrow9 {
+      left: 0 !important; /* align with start of scrollable wrapper */
+      z-index: 9999 !important; /* always on top */
+  }
+
+  /* Right arrows stay at end of video container */
+  .right-arrow1, .right-arrow2, .right-arrow3, .right-arrow4,
+  .right-arrow5, .right-arrow6, .right-arrow7, .right-arrow8, .right-arrow9 {
+      right: 0 !important;
+      z-index: 9999 !important;
+  }
+
+  /* Make arrows visible and clickable */
+  .left-arrow1, .right-arrow1,
+  .left-arrow2, .right-arrow2,
+  .left-arrow3, .right-arrow3,
+  .left-arrow4, .right-arrow4,
+  .left-arrow5, .right-arrow5,
+  .left-arrow6, .right-arrow6,
+  .left-arrow7, .right-arrow7,
+  .left-arrow8, .right-arrow8,
+  .left-arrow9, .right-arrow9 {
+      display: flex !important;
+      pointer-events: auto !important;
+  }
+}
