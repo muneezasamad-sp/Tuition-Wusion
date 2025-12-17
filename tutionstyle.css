@@ -589,11 +589,10 @@ img.right-arrow1, img.right-arrow2, img.right-arrow3, img.right-arrow4, img.righ
 
 /* General body fix */
 body {
-    overflow-x:auto; /* allow scroll on smaller screens */
+    overflow-x:auto; /* allow horizontal scroll if needed */
 }
 
 /* ---------------- Sliders Full Responsiveness ---------------- */
-
 
 /* Video boxes */
 .video-box1,
@@ -647,27 +646,45 @@ body {
 
 /* ---------------- Arrow Overrides ---------------- */
 
-/* Final PX arrow overrides (desktop) */
-.video-wrapper1 .left-arrow1  { left: 0px !important; }
-.video-wrapper1 .right-arrow1 { right: 0px !important;  }
-.video-wrapper2 .left-arrow2  { left:0px !important; }
-.video-wrapper2 .right-arrow2 { right: 420px !important;  }
-.video-wrapper3 .left-arrow3  { left: 0px !important;  }
-.video-wrapper3 .right-arrow3 { right:0px !important;  }
-.video-wrapper4 .left-arrow4  { left: 0px !important;  }
-.video-wrapper4 .right-arrow4 { right: 0px !important; }
-.video-wrapper5 .left-arrow5  { left: 0px !important;  }
-.video-wrapper5 .right-arrow5 { right: 0px!important;  }
-.video-wrapper6 .left-arrow6  { left: 0px !important;  }
-.video-wrapper6 .right-arrow6 { right: 0px !important;  }
-.video-wrapper7 .left-arrow7  { left: 0px !important;  }
-.video-wrapper7 .right-arrow7 { right: 0px !important;  }
-.video-wrapper8 .left-arrow8  { left: 0px !important;  }
-.video-wrapper8 .right-arrow8 { right: 0px !important;  }
-.video-wrapper9 .left-arrow9  { left: 0px !important;  }
-.video-wrapper9 .right-arrow9 { right: 0px!important;  }
+/* Make arrows visible and prevent clipping */
+.video-wrapper1,
+.video-wrapper2,
+.video-wrapper3,
+.video-wrapper4,
+.video-wrapper5,
+.video-wrapper6,
+.video-wrapper7,
+.video-wrapper8,
+.video-wrapper9 {
+    width: 100%;
+    max-width: 980px;
+    margin: 20px auto;
+    position: relative;
+    padding: 0 70px; /* extra space for arrows */
+    box-sizing: border-box;
+    overflow: visible; /* prevent cutting arrows */
+}
 
-/* Subtle shadow hover for all arrows (no scaling, no movement) */
+/* Left/right arrow positions */
+.left-arrow1, .left-arrow2, .left-arrow3, .left-arrow4,
+.left-arrow5, .left-arrow6, .left-arrow7, .left-arrow8, .left-arrow9 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.right-arrow1, .right-arrow2, .right-arrow3, .right-arrow4,
+.right-arrow5, .right-arrow6, .right-arrow7, .right-arrow8, .right-arrow9 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    z-index: 1000;
+}
+
+/* Hover effect: grow slightly from center + shadow */
 .left-arrow1:hover,
 .right-arrow1:hover,
 .left-arrow2:hover,
@@ -686,10 +703,10 @@ body {
 .right-arrow8:hover,
 .left-arrow9:hover,
 .right-arrow9:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.23); /* gentle shadow */
-    transition: box-shadow 0.2s ease-in-out;     /* smooth transition */
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 
 /* ---------------- Media Queries ---------------- */
 
@@ -718,28 +735,27 @@ body {
         width: 35px;
     }
 
-    .video-container1, .video-container2, .video-container3, .video-container4,
-    .video-container5, .video-container6, .video-container7, .video-container8, .video-container9 {
+    /* Make video container scrollable */
+    .video-container1, .video-container2, .video-container3,
+    .video-container4, .video-container5, .video-container6,
+    .video-container7, .video-container8, .video-container9 {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        gap: 15px;
+        padding-bottom: 10px;
         justify-content: flex-start;
-        padding: 0 10px;
     }
 
-  
-    .left-arrow1, .left-arrow2, .left-arrow3,
-    .left-arrow4, .left-arrow5, .left-arrow6,
-    .left-arrow7, .left-arrow8, .left-arrow9 {
-        left: 0 !important;
-        transform: translateX(40%) !important; /* keeps left arrows visible */
+    /* Snap each video */
+    .video-box1, .video-box2, .video-box3,
+    .video-box4, .video-box5, .video-box6,
+    .video-box7, .video-box8, .video-box9 {
+        scroll-snap-align: start;
+        flex: 0 0 auto;
     }
 
-    .right-arrow1, .right-arrow2, .right-arrow3,
-    .right-arrow4, .right-arrow5, .right-arrow6,
-    .right-arrow7, .right-arrow8, .right-arrow9 {
-        right: 0 !important;
-        transform: translateX(50%) !important; /* keeps right arrows visible */
-    }
-
-    /* Scale arrows smaller for mobile */
+    /* Scale arrows smaller on mobile */
     .left-arrow1, .right-arrow1,
     .left-arrow2, .right-arrow2,
     .left-arrow3, .right-arrow3,
@@ -749,7 +765,7 @@ body {
     .left-arrow7, .right-arrow7,
     .left-arrow8, .right-arrow8,
     .left-arrow9, .right-arrow9 {
-        transform: scale(0.1) !important;
+        transform: translateY(-50%) scale(0.7);
     }
 }
 
@@ -766,66 +782,5 @@ body {
     }
 }
 
-/* Wrapper: add horizontal padding to make space for arrows */
-.video-wrapper1,
-.video-wrapper2,
-.video-wrapper3,
-.video-wrapper4,
-.video-wrapper5,
-.video-wrapper6,
-.video-wrapper7,
-.video-wrapper8,
-.video-wrapper9 {
-    width: 100%;
-    max-width: 980px;      /* standard width */
-    margin: 20px auto;
-    position: relative;
-    padding: 0 50px;       /* space for arrows */
-    box-sizing: border-box;
-}
-.left-arrow1, .left-arrow2, .left-arrow3, .left-arrow4, 
-.left-arrow5, .left-arrow6, .left-arrow7, .left-arrow8, .left-arrow9 {
-    left: 10px;       /* inside wrapper padding */
-    top: 30%;          /* vertically centered */
-    transform: translateY(-50%); /* center arrow */
-}
 
-.right-arrow1, .right-arrow2, .right-arrow3, .right-arrow4,
-.right-arrow5, .right-arrow6, .right-arrow7, .right-arrow8, .right-arrow9 {
-    right: 15px;
-    top: 30%;
-    transform: translateY(-50%);
-}
-@media (max-width: 768px) {
-    /* Make video container horizontally scrollable */
-    .video-container1, .video-container2, .video-container3,
-    .video-container4, .video-container5, .video-container6,
-    .video-container7, .video-container8, .video-container9 {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
-        scroll-snap-type: x mandatory;     /* snap to each video */
-        gap: 15px;                         /* spacing between videos */
-        padding-bottom: 10px;              /* for scrollbar */
-        justify-content: flex-start;       /* align videos to left */
-    }
-
-    /* Each video snaps nicely when scrolling */
-    .video-box1, .video-box2, .video-box3,
-    .video-box4, .video-box5, .video-box6,
-    .video-box7, .video-box8, .video-box9 {
-        scroll-snap-align: start;
-        flex: 0 0 auto;  /* keep width fixed */
-        min-width: 140px; /* adjust for mobile */
-    }
-
-    /* Optional: scale arrows smaller and visible */
-    .left-arrow1, .left-arrow2, .left-arrow3, .left-arrow4, 
-    .left-arrow5, .left-arrow6, .left-arrow7, .left-arrow8, .left-arrow9,
-    .right-arrow1, .right-arrow2, .right-arrow3, .right-arrow4,
-    .right-arrow5, .right-arrow6, .right-arrow7, .right-arrow8, .right-arrow9 {
-        transform: scale(0.7); /* smaller on mobile */
-        top: 50%;
-        display: block;        /* still visible if you want */
-    }
-}
 
