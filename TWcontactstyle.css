@@ -1,65 +1,311 @@
+/* =================== ORIGINAL STYLES =================== */
+
 body{
-     background-color:white;
+    background-color:white;
     padding:0;
-      margin:0;
-      overflow-x:hidden;
-      text-align:center;
-     }
-header{
-       background-color:#DDB1C8;
-       padding:15px;
-       box-shadow:0 0 3px black;
-       }
-    
-header li{
-          display:inline;
-          padding-right:100px;
-          
-          
-         }
-header li a{
-            color:black;
-            text-decoration:none;
-            padding:13px;
-            transition: .3s ease
-            }
-header li a:hover{
-           color:royalblue;
-            
-           
-            }
-header ul a{
-           color:white;
-           background-color:royalblue;
-           border-radius:30px;
-           position:relative;
-          
-           }
-header li img{
-              width:80px;
-              float:left;
-              margin-top:-25px;
-              border-radius:0px;
-              height:70px;
+    margin:0;
+    overflow-x:hidden;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-img{
-    width:50px;
-    height:50px;
+h2{
+   font-size:50px;
+font-style:italic;
+}
+header{
+    background-color:#DDB1C8;
+    padding:10px;
+    box-shadow:0 0 3px black;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
 }
 
+header li{
+    display:inline;
+    padding-right:100px;
+}
+
+header li a{
+    color:black;
+    text-decoration:none;
+    padding:13px;
+    transition: .3s ease;
+}
+
+header li a:hover{
+    color:royalblue;
+}
+
+header ul a{
+    color:white;
+    background-color:royalblue;
+    border-radius:30px;
+    position:relative;
+}
+
+header li img{
+    width:80px;
+    float:left;
+    margin-top:-25px;
+    border-radius:0px;
+    height:70px;
+}
+
+p {
+    font-size: 25px;
+    margin: 10px 15px;
+}
+
+a img {
+    width: 45px;
+    height: 45px;
+}
+
+body > :not(.site-footer){
+    flex: 1 0 auto; /* body content expands to take space */
+}
 
 .site-footer {
-  background-color: #DDB1C8;
-  color: #000; /* adjust if needed */
-  padding: 0px 0px;
-  text-align: center;
-  font-family: Arial, sans-serif;
+    background-color: #DDB1C8;
+    color: #000;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    position: relative;
+    bottom: 0;
 }
-.copyright{
-           text-align:left;
-}
+
 .footer-content {
-  display: flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-left, .footer-right {
+    flex: 1 1 auto;
+    min-width: 220px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer-right img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-right img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.footer-left .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* =========================
+   HEADER & FOOTER FIX DURING HORIZONTAL SCROLL
+   ========================= */
+
+header.head, .site-footer {
+    width: 100vw;           /* full viewport width */
+    min-width: 100%;        /* prevent shrinking */
+    left: 0;
+    box-sizing: border-box;
+}
+
+header.head ul {
+    width: 100%;
+}
+
+/* Prevent body content from overflowing viewport */
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* =========================
+   RESPONSIVE FLEX STRATEGY
+   ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    body {
+        overflow-x: hidden; /* allow horizontal scroll only if needed */
+    }
+
+    header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    header li img {
+        width: 70px;
+        height: auto;
+    }
+
+    header li a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .footer-left .logo img {
+        width: 130px;
+    }
+
+    .footer-right img {
+        width: 45px;
+        height: auto;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+    header ul {
+        gap: 40px;
+    }
+   body {
+        overflow-x: hidden; /* allow horizontal scroll only if needed */
+    }
+         
+    header li a {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+    header li img {
+        width: 60px;
+        height: auto;
+    }
+    .footer-left, .footer-right {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .footer-left .logo img {
+        width: 120px;
+    }
+    .footer-right img {
+        width: 35px;
+        height: auto;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    header li a {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+    
+    header li img {
+        width: 50px;
+        height: auto;
+    }
+    .footer-left .logo img {
+        width: 100px;
+    }
+    .footer-right img {
+        width: 30px;
+        height: auto;
+    }
+}
+
+/* =========================
+   FINAL BODY/FLEX ADJUSTMENTS
+   ========================= */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body > :not(.site-footer){
+    flex: 1 0 auto;
+}
+
+.site-footer {
+    margin-top: auto; /* sticks footer to bottom */
+}
+
+/* =========================
+   FIX HEADER BUTTONS ON MOBILE
+   ========================= */
+
+/* Prevent button text from breaking into multiple lines */
+header li a {
+    white-space: nowrap;   /* keep text in one line */
+}
+
+/* Ensure header list items don't break individually */
+header ul {
+    flex-wrap: wrap;       /* allow wrapping if necessary */
+    justify-content: center;
+    gap: 10px;             /* spacing between items */
+}
+
+/* Reduce padding on very small screens to fit all buttons */
+@media (max-width: 480px) {
+    header li a {
+        padding: 5px 6px;  /* smaller padding for narrow screens */
+        font-size: 12px;
+    }
+    header li {
+        padding-right: 15px; /* reduce spacing between list items */
+    }
+}
+/* =========================
+   FIX WHITE LINE IN HEADER & FOOTER ON MOBILE
+   ========================= */
+
+/* Make sure html and body have no extra spacing */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 100%;
+}
+
+/* Ensure header and footer fully occupy width */
+header.head, .site-footer {
+    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+    background-color: #DDB1C8; /* your header/footer color */
+}
+
+/* Optional: prevent any extra white gaps caused by flex */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white; /* overall background if needed */
+}
+
+body > :not(.site-footer) {
+    flex: 1 0 auto;
+}
+/* Prevent horizontal scroll but keep vertical scroll */
+html, body {
+    overflow-x: hidden; /* hide horizontal overflow */
+    overflow-y: auto;   /* keep vertical scrolling */
+}
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
@@ -409,3 +655,4 @@ body > :not(.site-footer) {
 .site-footer {
     margin-top: auto; /* stick footer to bottom */
 }
+
