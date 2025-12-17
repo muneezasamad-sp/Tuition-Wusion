@@ -656,3 +656,25 @@ body > :not(.site-footer) {
     margin-top: auto; /* stick footer to bottom */
 }
 
+/* =========================
+   GITHUB FRIENDLY HEADER/FOOTER FIX
+   ========================= */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 100%;
+    overflow-x: hidden; /* hide horizontal overflow */
+    overflow-y: auto;   /* keep vertical scroll */
+}
+
+header.head, .site-footer {
+    width: 100%;        /* full width without using 100vw */
+    min-width: 100%;    /* prevent shrinking */
+    box-sizing: border-box;
+    background-color: #DDB1C8; /* your header/footer color */
+    position: relative;
+    z-index: 100;
+}
+
