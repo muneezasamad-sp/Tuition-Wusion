@@ -665,24 +665,162 @@ body {
     overflow: visible; /* prevent cutting arrows */
 }
 
-/* Left/right arrow positions */
-.left-arrow1, .left-arrow2, .left-arrow3, .left-arrow4,
-.left-arrow5, .left-arrow6, .left-arrow7, .left-arrow8, .left-arrow9 {
+/* ---------------- Individual Arrow Positions ---------------- */
+
+/* Video Wrapper 1 */
+.left-arrow1 {
     position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 10px;               /* adjust left space */
+    transform: translate(15%, -52%);
     z-index: 1000;
 }
 
-.right-arrow1, .right-arrow2, .right-arrow3, .right-arrow4,
-.right-arrow5, .right-arrow6, .right-arrow7, .right-arrow8, .right-arrow9 {
+.right-arrow1 {
     position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(50%, -50%);
+    top: 30%;
+    right: 20px;              /* adjust right space */
+    transform: translate(10%, -52%);
     z-index: 1000;
 }
+
+/* Video Wrapper 2 */
+.left-arrow2 {
+    position: absolute;
+    top: 32%;
+    left: 12px;
+    transform: translate(18%, -48%);
+    z-index: 1000;
+}
+
+.right-arrow2 {
+    position: absolute;
+    top: 32%;
+    right: 12px;
+    transform: translate(-670%, -48%);
+    z-index: 1000;
+}
+
+/* Video Wrapper 3 */
+.left-arrow3 {
+    position: absolute;
+    top: 28%;
+    left: 14px;
+    transform: translate(20%, -52%);
+    z-index: 1000;
+}
+
+.right-arrow3 {
+    position: absolute;
+    top: 28%;
+    right: 14px;
+    transform: translate(10%, -52%);
+    z-index: 1000;
+}
+
+/* Video Wrapper 4 */
+.left-arrow4 {
+    position: absolute;
+    top: 34%;
+    left: 16px;
+    transform: translate(20%, -52%);
+    z-index: 1000;
+}
+
+.right-arrow4 {
+    position: absolute;
+    top: 34%;
+    right: 16px;
+    transform: translate(10%, -52%);
+    z-index: 1000;
+}
+
+/* Video Wrapper 5 */
+.left-arrow5 {
+    position: absolute;
+    top: 30%;
+    left: 18px;
+    transform: translate(15%, -52%);
+    z-index: 1000;
+}
+
+.right-arrow5 {
+    position: absolute;
+    top: 30%;
+    right: 18px;
+    transform: translate(10%, -52%);
+    z-index: 1000;
+}
+
+/* Video Wrapper 6 */
+.left-arrow6 {
+    position: absolute;
+    top: 31%;
+    left: 20px;
+    transform: translate(16%, -52%);
+    z-index: 1000;
+}
+
+.right-arrow6 {
+    position: absolute;
+    top: 31%;
+    right: 20px;
+    transform: translate(10%, -52%);
+    z-index: 1000;
+}
+
+/* Video Wrapper 7 */
+.left-arrow7 {
+    position: absolute;
+    top: 29%;
+    left: 22px;
+    transform: translate(14%, -52%);
+    z-index: 1000;
+}
+
+.right-arrow7 {
+    position: absolute;
+    top: 29%;
+    right: 22px;
+    transform: translate(10%, -52%);
+    z-index: 1000;
+}
+
+/* Video Wrapper 8 */
+.left-arrow8 {
+    position: absolute;
+    top: 33%;
+    left: 24px;
+    transform: translate(19%, -52%);
+    z-index: 1000;
+}
+
+.right-arrow8 {
+    position: absolute;
+    top: 33%;
+    right: 24px;
+    transform: translate(10%, -52%);
+    z-index: 1000;
+}
+
+/* Video Wrapper 9 */
+.left-arrow9 {
+    position: absolute;
+    top: 30%;
+    left: 26px;
+    transform: translate(15%, -52%);
+    z-index: 1000;
+}
+
+.right-arrow9 {
+    position: absolute;
+    top: 30%;
+    right: 26px;
+    transform: translate(10%, -52%);
+    z-index: 1000;
+}
+
+
 
 /* Hover effect: grow slightly from center + shadow */
 .left-arrow1:hover,
@@ -781,6 +919,7 @@ body {
         width: 30px;
     }
 }
+
 
 
 
