@@ -918,7 +918,68 @@ body {
     .play-btn5, .play-btn6, .play-btn7, .play-btn8, .play-btn9 {
         width: 30px;
     }
+
+     
+h2{
+   font-size:50px;
+font-style:italic;
 }
+
+p {
+    font-size: 25px;
+    margin: 10px 15px;
+}
+
+a img {
+    width: 45px;
+    height: 45px;
+}
+
+/* =========================
+   FINAL BODY/FLEX ADJUSTMENTS
+   ========================= */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body > :not(.site-footer){
+    flex: 1 0 auto;
+}
+
+.site-footer {
+    margin-top: auto; /* sticks footer to bottom */
+}
+
+/* =========================
+   FIX HEADER BUTTONS ON MOBILE
+   ========================= */
+
+/* Prevent button text from breaking into multiple lines */
+header li a {
+    white-space: nowrap;   /* keep text in one line */
+}
+
+/* Ensure header list items don't break individually */
+header ul {
+    flex-wrap: wrap;       /* allow wrapping if necessary */
+    justify-content: center;
+    gap: 10px;             /* spacing between items */
+}
+
+/* Reduce padding on very small screens to fit all buttons */
+@media (max-width: 480px) {
+    header li a {
+        padding: 5px 6px;  /* smaller padding for narrow screens */
+        font-size: 12px;
+    }
+    header li {
+        padding-right: 1px; /* reduce spacing between list items */
+    }
+
+
 
 
 
