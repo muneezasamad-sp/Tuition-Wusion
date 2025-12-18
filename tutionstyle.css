@@ -920,19 +920,33 @@ body {
     }
 }
      
-h2{
-   font-size:50px;
-font-style:italic;
+.contactheading{
+    font-size: 60px;   /* increase size */
+    font-style: italic;
 }
+
 
 p {
     font-size: 25px;
     margin: 10px 15px;
 }
 
-a img {
-    width: 45px;
-    height: 45px;
+.social-icons {
+    display: flex;                 /* horizontal layout */
+    justify-content: center;       /* center horizontally */
+    align-items: center;           /* vertical alignment of icons */
+    gap: 20px;                     /* spacing between icons */
+    margin-top: 15px;              /* space above */
+    flex-wrap: wrap;               /* wrap if screen is small */
+    padding: 0;                    /* remove extra padding */
+    list-style: none;              /* if ever inside ul/li */
+}
+
+.social-icon {
+    width: 45px;                   /* size of icon */
+    height: auto;
+    cursor: pointer;
+    display: block;                /* ensures proper spacing */
 }
 
 /* =========================
@@ -976,12 +990,6 @@ header ul {
         font-size: 12px;
     }
     header li {
-        padding-right: 1px; /* reduce spacing between list items */
+        padding-right: 10px; /* reduce spacing between list items */
     }
-
-
-
-
-
-
 
