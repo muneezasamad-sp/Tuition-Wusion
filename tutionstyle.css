@@ -552,6 +552,70 @@ img.right-arrow1, img.right-arrow2, img.right-arrow3, img.right-arrow4, img.righ
                font-style:italic;
                font-size:40px;
 }
+
+.contactheading{
+    font-size: 60px;   /* increase size */
+    font-style: italic;
+}
+
+
+p {
+    font-size: 25px;
+    margin: 10px 15px;
+}
+
+.social-icons {
+    display: flex;                 /* horizontal layout */
+    justify-content: center;       /* center horizontally */
+    align-items: center;           /* vertical alignment of icons */
+    gap: 20px;                     /* spacing between icons */
+    margin-top: 15px;              /* space above */
+    flex-wrap: wrap;               /* wrap if screen is small */
+    padding: 0;                    /* remove extra padding */
+    list-style: none;              /* if ever inside ul/li */
+}
+
+.social-icon {
+    width: 45px;                   /* size of icon */
+    height: auto;
+    cursor: pointer;
+    display: block;                /* ensures proper spacing */
+}
+
+/* =========================
+   FINAL BODY/FLEX ADJUSTMENTS
+   ========================= */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body > :not(.site-footer){
+    flex: 1 0 auto;
+}
+
+.site-footer {
+    margin-top: auto; /* sticks footer to bottom */
+}
+
+/* =========================
+   FIX HEADER BUTTONS ON MOBILE
+   ========================= */
+
+/* Prevent button text from breaking into multiple lines */
+header li a {
+    white-space: nowrap;   /* keep text in one line */
+}
+
+/* Ensure header list items don't break individually */
+header ul {
+    flex-wrap: wrap;       /* allow wrapping if necessary */
+    justify-content: center;
+    gap: 10px;             /* spacing between items */
+}
+
 /* ================= Responsive Adjustments ================= */
 
 /* General body adjustments for small screens */
@@ -919,69 +983,6 @@ body {
         width: 30px;
     }
 }
-     
-.contactheading{
-    font-size: 60px;   /* increase size */
-    font-style: italic;
-}
-
-
-p {
-    font-size: 25px;
-    margin: 10px 15px;
-}
-
-.social-icons {
-    display: flex;                 /* horizontal layout */
-    justify-content: center;       /* center horizontally */
-    align-items: center;           /* vertical alignment of icons */
-    gap: 20px;                     /* spacing between icons */
-    margin-top: 15px;              /* space above */
-    flex-wrap: wrap;               /* wrap if screen is small */
-    padding: 0;                    /* remove extra padding */
-    list-style: none;              /* if ever inside ul/li */
-}
-
-.social-icon {
-    width: 45px;                   /* size of icon */
-    height: auto;
-    cursor: pointer;
-    display: block;                /* ensures proper spacing */
-}
-
-/* =========================
-   FINAL BODY/FLEX ADJUSTMENTS
-   ========================= */
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-body > :not(.site-footer){
-    flex: 1 0 auto;
-}
-
-.site-footer {
-    margin-top: auto; /* sticks footer to bottom */
-}
-
-/* =========================
-   FIX HEADER BUTTONS ON MOBILE
-   ========================= */
-
-/* Prevent button text from breaking into multiple lines */
-header li a {
-    white-space: nowrap;   /* keep text in one line */
-}
-
-/* Ensure header list items don't break individually */
-header ul {
-    flex-wrap: wrap;       /* allow wrapping if necessary */
-    justify-content: center;
-    gap: 10px;             /* spacing between items */
-}
 
 /* Reduce padding on very small screens to fit all buttons */
 @media (max-width: 480px) {
@@ -992,4 +993,5 @@ header ul {
     header li {
         padding-right: 10px; /* reduce spacing between list items */
     }
+
 
