@@ -553,7 +553,7 @@ img.right-arrow1, img.right-arrow2, img.right-arrow3, img.right-arrow4, img.righ
                font-size:40px;
 }
 
-.contactheading{
+.contact-heading{
     font-size:40px;   /* increase size */
     font-style:italic;
 }
@@ -993,6 +993,7 @@ body {
     header li {
         padding-right: 10px; /* reduce spacing between list items */
     }
+
 
 
 
