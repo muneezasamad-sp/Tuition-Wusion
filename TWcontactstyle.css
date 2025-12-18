@@ -10,10 +10,12 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
+
 h2{
    font-size:50px;
-font-style:italic;
+   font-style:italic;
 }
+
 header{
     background-color:#DDB1C8;
     padding:10px;
@@ -34,6 +36,221 @@ header li a{
     text-decoration:none;
     padding:13px;
     transition: .3s ease;
+}
+
+header li a:hover{
+    color:royalblue;
+}
+
+header ul a{
+    color:white;
+    background-color:royalblue;
+    border-radius:30px;
+    position:relative;
+}
+
+header li img{
+    width:80px;
+    float:left;
+    margin-top:-25px;
+    border-radius:0px;
+    height:70px;
+}
+
+p {
+    font-size: 25px;
+    margin: 10px 15px;
+}
+
+a img {
+    width: 45px;
+    height: 45px;
+}
+
+body > :not(.site-footer){
+    flex: 1 0 auto;
+}
+
+.site-footer {
+    background-color: #DDB1C8;
+    color: #000;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-left, .footer-right {
+    flex: 1 1 auto;
+    min-width: 220px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer-right img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-right img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.footer-left .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* =========================
+   RESPONSIVE FLEX STRATEGY
+   ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    header li img {
+        width: 70px;
+        height: auto;
+    }
+
+    header li a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .footer-left .logo img {
+        width: 130px;
+    }
+
+    .footer-right img {
+        width: 45px;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+    header ul {
+        gap: 30px;
+    }
+
+    header li a {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    header li img {
+        width: 60px;
+    }
+
+    .footer-left, .footer-right {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-left .logo img {
+        width: 120px;
+    }
+
+    .footer-right img {
+        width: 35px;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    header li a {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+    
+    header li img {
+        width: 50px;
+    }
+
+    .footer-left .logo img {
+        width: 100px;
+    }
+
+    .footer-right img {
+        width: 30px;
+    }
+}
+
+/* =========================
+   FIX HEADER BUTTONS ON MOBILE
+   ========================= */
+
+header li a {
+    white-space: nowrap;
+}
+
+header ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 480px) {
+    header li a {
+        padding: 5px 6px;
+        font-size: 12px;
+    }
+    header li {
+        padding-right: 1px;
+    }
+}
+
+/* =========================
+   ✅ GITHUB PAGES FIX (ADDED — NO STYLE CHANGE)
+   ========================= */
+
+/* Prevent GitHub mobile white gap */
+html, body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Ensure header & footer always cover full width */
+header,
+.site-footer {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    left: 0;
+}
+
+/* Footer stick to bottom safely */
+body > :not(.site-footer) {
+    flex: 1;
+}
 }
 
 header li a:hover{
@@ -306,3 +523,4 @@ html, body {
     overflow-x: hidden; /* hide horizontal overflow */
     overflow-y: auto;   /* keep vertical scrolling */
 }
+
