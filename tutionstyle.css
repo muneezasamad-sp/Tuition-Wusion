@@ -918,7 +918,7 @@ body {
     .play-btn5, .play-btn6, .play-btn7, .play-btn8, .play-btn9 {
         width: 30px;
     }
-
+}
      
 h2{
    font-size:50px;
@@ -978,6 +978,7 @@ header ul {
     header li {
         padding-right: 1px; /* reduce spacing between list items */
     }
+
 
 
 
